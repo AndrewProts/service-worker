@@ -24,10 +24,8 @@
 <img src="./1.jpg" alt="1">
 </body>
 <script>
-    if('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('./sw.js')
-            .then(function() { console.log("Service Worker Registered"); });
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
     }
 </script>
 </html>
